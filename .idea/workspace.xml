@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ceefd81-a25c-48ce-ac8e-219c961f3eda" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sarzosa-carlos" beforeDir="false" afterPath="$PROJECT_DIR$/sarzosa-carlos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cx2Oi9qhvghb55yDeCPnIIYZxz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,6 +38,7 @@
       <updated>1591455893899</updated>
       <workItem from="1591455895118" duration="11000" />
       <workItem from="1591455920952" duration="29000" />
+      <workItem from="1591705369186" duration="770000" />
     </task>
     <servers />
   </component>
