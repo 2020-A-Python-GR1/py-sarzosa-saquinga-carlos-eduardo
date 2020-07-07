@@ -80,9 +80,9 @@ def crear_curso():
 
     nombre = revisar_datos_curso('Inserta el Nombre:', 'nombre')
     categoria = revisar_datos_curso('Inserta la Categoria:', 'categoria')
-    duracion = revisar_datos_curso('Inserta el Duracion:', 'duracion')
-    calificacion = revisar_datos_curso('Inserta el Calificacion:', 'calificacion')
-    anio = revisar_datos_curso('Inserta el Año:', 'anio')
+    duracion = revisar_datos_curso('Inserta la Duracion (hh:mm) :', 'duracion')
+    calificacion = revisar_datos_curso('Inserta el Calificacion (1-10):', 'calificacion')
+    anio = revisar_datos_curso('Inserta el Año (AAAA):', 'anio')
 
     curso = Cursos(None, nombre, categoria, duracion, calificacion, anio)
     if db.crear_curso(curso):
@@ -108,12 +108,12 @@ def buscar_curso():
     if categoria:
         filtros['CATEGORIA'] = categoria
 
-    print('Introduce una calificacion (vacío para usar otro filtro):')
+    print('Introduce una calificacion (1-10)(vacío para usar otro filtro):')
     calificacion = input()
     if calificacion:
         filtros['CALIFICACION'] = calificacion
 
-    print('Introduce una año (vacío para usar otro filtro):')
+    print('Introduce una año (AAAA) (vacío para usar otro filtro):')
     anio = input()
     if anio:
         filtros['ANIO'] = anio
@@ -149,11 +149,11 @@ def actualizar_curso():
     if categoria:
         data['CATEGORIA'] = categoria
 
-    duracion = revisar_datos_curso('Introduce un duracion:', 'duracion', False)
+    duracion = revisar_datos_curso('Introduce un duracion (hh:mm):', 'duracion', False)
     if duracion:
         data['DURACION'] = duracion
 
-    calificacion = revisar_datos_curso('Introduce una calificacion:', 'calificacion', False)
+    calificacion = revisar_datos_curso('Introduce una calificacion (1-10):', 'calificacion', False)
     if calificacion:
         data['CALIFICACION'] = calificacion
 
@@ -164,7 +164,7 @@ def actualizar_curso():
     try:
         res = db.update(id_object, data)
         if res:
-            print('Contacto actualizado con éxito')
+            print('Curso actualizado con éxito')
     except Exception as err:
         print(err)
         time.sleep(1)
@@ -181,7 +181,7 @@ def eliminar_curso():
     try:
         res = db.delete(id_object)
         if res:
-            print('Contacto eliminado con éxito')
+            print('Curso eliminado con éxito')
     except Exception as err:
         print(err)
         time.sleep(1)
@@ -194,17 +194,17 @@ def listar_curso():
     list_curso = db.listar_curso()
 
     if not list_curso:
-        return print('Todavía no hay contactos guardados')
+        return print('Todavía no hay cursos guardados')
 
     _imprimir_tabla_curso(list_curso)
 
 # ---------------------------------#
 # Método Imprimir Tabla de Cursos  #
 # ---------------------------------#
-def _imprimir_tabla_curso(list_contacts):
+def _imprimir_tabla_curso(list_cursos):
     tabla = PrettyTable(db.get_esquema().keys())
 
-    for curso in list_contacts:
+    for curso in list_cursos:
         tabla.add_row([
             curso.id_curso,
             curso.nombre,
