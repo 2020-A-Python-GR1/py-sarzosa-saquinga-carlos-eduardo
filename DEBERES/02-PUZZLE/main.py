@@ -82,6 +82,7 @@ def generar_puzzle(num_mov):
     pygame.time.wait(50)
     ultimo_movimiento = None
 
+    # genero un número de movimiento aleatorios, según la cantidad de num_mov envidada
     for i in range(num_mov):
         mov = get_movimiento_aleatorio(tablero, ultimo_movimiento)
         crear_animacion(tablero, mov, 'Generando...', velocidad_animacion=int(tamano_cuadrado / 1))
@@ -113,20 +114,21 @@ def get_movimiento_aleatorio(tablero, ultimo_movimiento=None):
     movimientos_validos = [arriba, abajo, izquierda, derecha]
 
     # eliminar movimientos de la lista que ya que están descalificados
-    if ultimo_movimiento == arriba or not is_valid_move(tablero, abajo):
+    if ultimo_movimiento == arriba or not validar_movimiento(tablero, abajo):
         movimientos_validos.remove(abajo)
-    if ultimo_movimiento == abajo or not is_valid_move(tablero, arriba):
+    if ultimo_movimiento == abajo or not validar_movimiento(tablero, arriba):
         movimientos_validos.remove(arriba)
-    if ultimo_movimiento == izquierda or not is_valid_move(tablero, derecha):
+    if ultimo_movimiento == izquierda or not validar_movimiento(tablero, derecha):
         movimientos_validos.remove(derecha)
-    if ultimo_movimiento == derecha or not is_valid_move(tablero, izquierda):
+    if ultimo_movimiento == derecha or not validar_movimiento(tablero, izquierda):
         movimientos_validos.remove(izquierda)
 
-    # return a random move from the list of remaining moves
+    # devolver un movimiento aleatorio de la lista de movimientos restantes
     return random.choice(movimientos_validos)
 
 
-def is_valid_move(tablero, movimiento):
+def validar_movimiento(tablero, movimiento):
+    # valido si el movimiento es valido según la posisicon de x & y
     blanco_x, blanco_y = get_posicion_blanco(tablero)
     return (movimiento == arriba and blanco_y != len(tablero[0]) - 1) or \
            (movimiento == abajo and blanco_y != 0) or \
@@ -138,6 +140,7 @@ def realizar_movimiento(tablero, movimiento):
 
     blanco_x, blanco_y = get_posicion_blanco(tablero)
 
+    # condicionales para ejecutar movimiento en la posicion designada
     if movimiento == arriba:
         tablero[blanco_x][blanco_y], tablero[blanco_x][blanco_y + 1] = tablero[blanco_x][blanco_y + 1], tablero[blanco_x][blanco_y]
     elif movimiento == abajo:
