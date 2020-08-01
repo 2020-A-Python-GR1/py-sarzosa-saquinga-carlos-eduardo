@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceefd81-a25c-48ce-ac8e-219c961f3eda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/py-sarzosa-saquinga-carlos-eduardo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/py-sarzosa-saquinga-carlos-eduardo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-python/02-FUNCIONES.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/01-python/02-FUNCIONES.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-PANDAS/data/artwork.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/03-PANDAS/data/artwork.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" beforeDir="false" afterPath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +151,7 @@
       <workItem from="1596290985117" duration="319000" />
       <workItem from="1596291318235" duration="126000" />
       <workItem from="1596291459738" duration="3033000" />
-      <workItem from="1596294953798" duration="748000" />
+      <workItem from="1596294953798" duration="1361000" />
     </task>
     <servers />
   </component>
@@ -208,10 +204,10 @@
     </state>
     <state x="295" y="95" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1596291375279" />
     <state x="2141" y="79" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@1920.0.1440.870" timestamp="1595938459888" />
-    <state x="2178" y="0" width="743" height="973" maximized="true" key="dock-window-1" timestamp="1596295842286">
+    <state x="2178" y="0" width="743" height="973" key="dock-window-1" timestamp="1596296368090">
       <screen x="1920" y="0" width="1440" height="870" />
     </state>
-    <state x="2178" y="0" width="743" height="973" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1596295842286" />
+    <state x="2178" y="0" width="743" height="973" key="dock-window-1/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1596296368090" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/py_sarzosa_saquinga_carlos_eduardo$test.coverage" NAME="test Coverage Results" MODIFIED="1595940979077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-PANDAS" />

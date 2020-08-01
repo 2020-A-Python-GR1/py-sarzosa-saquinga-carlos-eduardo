@@ -92,22 +92,29 @@ sr4 = pd.Series(np.intersect1d(ser1, ser2))
 # 16) ¿Como obtener el numero de veces que se repite un valor en una serie?
 ser = pd.Series(np.take(list('abcdefgh'), np.random.randint(8, size=30)))
 
+
 # 17) ¿Como mantener los 2 valores mas repetidos de una serie, y a los demas valores cambiarles por 0 ?
 np.random.RandomState(100)
 ser = pd.Series(np.random.randint(1, 5, [12]))
 
+
 # 18) ¿Como transformar una serie de un arreglo de numpy a un DataFrame con un shape definido?
 ser = pd.Series(np.random.randint(1, 10, 35))
 shape(7,5)
+
 
 # 19) ¿Obtener los valores de una serie conociendo la posicion por indice?
 ser = pd.Series(list('abcdefghijklmnopqrstuvwxyz'))
 pos = [0, 4, 8, 14, 20]
 # a e i o u
 
+
 # 20) ¿Como anadir series vertical u horizontalmente a un DataFrame?
 ser1 = pd.Series(range(5))
 ser2 = pd.Series(list('abcde'))
+
+df3 = df.append(pd.Series(ser1, index=['col1','col2']), ignore_index=True)
+df4 = df.append(pd.Series(ser2, colums=['col1','col2']), ignore_index=True)
 
 
 # 22)¿Como importar solo columnas especificas de un archivo csv?
