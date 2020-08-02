@@ -88,6 +88,7 @@ ser2 = pd.Series([4, 5, 6, 7, 8])
 sr3 = pd.Series(np.union1d(ser1, ser2))
 sr4 = pd.Series(np.intersect1d(ser1, ser2))
 
+resultado = sr4[sr4.isin(sr3)]
 
 # 16) ¿Como obtener el numero de veces que se repite un valor en una serie?
 ser = pd.Series(np.take(list('abcdefgh'), np.random.randint(8, size=30)))
