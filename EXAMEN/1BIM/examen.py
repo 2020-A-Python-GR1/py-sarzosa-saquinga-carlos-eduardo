@@ -8,8 +8,8 @@ arreglo1 =  np.zeros(10)
 print(arreglo1)
 
 # 3) Crear un vector de ceros de tamaño 10 y el de la posicion 5 sea igual a 1
-arreglo2 =  np.zeros(10)
-
+arreglo1[5] = 1
+print(arreglo1)
 
 # 4) Cambiar el orden de un vector de 50 elementos, el de la posicion 1 es el de la 50 etc.
 arreglo3 = np.arange(1,51)
