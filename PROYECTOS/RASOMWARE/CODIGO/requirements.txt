@@ -1,6 +1,0 @@
-ttkthemes
-pymsgbox
-pyaes
-pycryptodome
-pyinstaller
-requests

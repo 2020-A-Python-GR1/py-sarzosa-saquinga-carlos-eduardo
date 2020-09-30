@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ceefd81-a25c-48ce-ac8e-219c961f3eda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROYECTOS/RASOMWARE/CODIGO/.idea/Proyecto.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PROYECTOS/RASOMWARE/CODIGO/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/py-sarzosa-saquinga-carlos-eduardo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/py-sarzosa-saquinga-carlos-eduardo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" beforeDir="false" afterPath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTOS/1BIM/Proyecto Python - Historias de Usuario.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PROYECTOS/1BIM/Proyecto Python - Mockup.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-PANDAS/data/artwork_colores.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/03-PANDAS/data/artwork_colores.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-PANDAS/data/artwork_mt.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/03-PANDAS/data/artwork_mt.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-PANDAS/g_iloc_loc.py" beforeDir="false" afterPath="$PROJECT_DIR$/03-PANDAS/g_iloc_loc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,48 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.2examen">
+    <configuration name="1examen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="py-sarzosa-saquinga-carlos-eduardo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EXAMEN/1BIM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\cesarzosa\OneDrive - Escuela Politécnica Nacional\Documentos\University\Semestres\2020-A\Programación en Demanda Python\6.Proyectos\py-sarzosa-saquinga-carlos-eduardo\EXAMEN\1BIM\1examen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2examen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="py-sarzosa-saquinga-carlos-eduardo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EXAMEN/2BIM" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EXAMEN/2BIM/2examen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="py-sarzosa-saquinga-carlos-eduardo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,32 +146,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="examen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="py-sarzosa-saquinga-carlos-eduardo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EXAMEN/1BIM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EXAMEN/1BIM/examen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="py-sarzosa-saquinga-carlos-eduardo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PROYECTOS/RASOMWARE/CODIGO" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -173,8 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2examen" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.examen" />
+        <item itemvalue="Python.1examen" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.d_lectura_csv" />
       </list>
@@ -207,6 +227,7 @@
       <workItem from="1596304674418" duration="625000" />
       <workItem from="1596546286020" duration="1992000" />
       <workItem from="1596617445194" duration="362000" />
+      <workItem from="1600777368053" duration="1338000" />
     </task>
     <servers />
   </component>

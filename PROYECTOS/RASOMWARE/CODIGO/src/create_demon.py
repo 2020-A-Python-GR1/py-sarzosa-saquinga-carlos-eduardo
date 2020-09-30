@@ -113,7 +113,7 @@ def connector():
 class mainwindow(Tk):
     def __init__(self):
         Tk.__init__(self)
-        self.title(string = "Tango Down!") # Set window title
+        self.title(string = "Proyecto Semestral Python 2020-A") # Set window title
         self.resizable(0,0) # Do not allow to be resized
         self.configure(background='black')
         #self.overrideredirect(True)
@@ -148,7 +148,7 @@ class mainwindow(Tk):
             thread.start()
 
         def start_timer():
-            Label(self, text = 'TIME LEFT:', font='Helvetica 18 bold', foreground='red', background = 'black').grid(row = 5, column = 0, columnspan = 4)
+            Label(self, text = 'Tiempo Restante:', font='Helvetica 18 bold', foreground='red', background = 'black').grid(row = 5, column = 0, columnspan = 4)
             try:
                 s = 36000 # 10 hours
                 while s:
